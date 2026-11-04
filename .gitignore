@@ -1,0 +1,37 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Output (optional - keep if you want to track)
+# output/
+
+# Credentials
+*credentials*.json
+*key*.json
+client_secrets.json
+token.pickle
+
+# GCP
+gcp-tts-key.json

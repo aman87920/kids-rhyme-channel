@@ -1,0 +1,85 @@
+TOPIC 1: Alphabet Adventure (A–Z with Animals)
+================================================
+
+Rhyme Script:
+-------------
+A is for Alligator, snapping his jaws
+B is for Bear, climbing up paws
+C is for Cat, curled up so tight
+D is for Dog, barking all night
+E is for Elephant, trunk swinging wide
+F is for Fox, with a bushy tail to hide
+G is for Giraffe, reaching up high
+H is for Hippo, splashing nearby
+I is for Iguana, basking in sun
+J is for Jaguar, having such fun
+K is for Kangaroo, hopping around
+L is for Lion, the king of the ground
+M is for Monkey, swinging on vine
+N is for Nightingale, singing so fine
+O is for Owl, hooting at moon
+P is for Penguin, waddling in tune
+Q is for Quail, running so fast
+R is for Rabbit, hopping at last
+S is for Snake, sliding along
+T is for Tiger, brave and so strong
+U is for Unicorn, magical and bright
+V is for Vulture, soaring in flight
+W is for Whale, swimming so deep
+X is for X-ray fish, secrets to keep
+Y is for Yak, with shaggy long hair
+Z is for Zebra, stripes everywhere!
+
+Now you know your A to Z
+Animals are friends, you and me!
+Sing it again, sing it with glee
+Learning letters is easy as can be!
+
+---
+TTS-Ready Text (copy-paste into ElevenLabs/OpenAI TTS):
+--------------------------------------------------------
+A is for Alligator, snapping his jaws. B is for Bear, climbing up paws. C is for Cat, curled up so tight. D is for Dog, barking all night. E is for Elephant, trunk swinging wide. F is for Fox, with a bushy tail to hide. G is for Giraffe, reaching up high. H is for Hippo, splashing nearby. I is for Iguana, basking in sun. J is for Jaguar, having such fun. K is for Kangaroo, hopping around. L is for Lion, the king of the ground. M is for Monkey, swinging on vine. N is for Nightingale, singing so fine. O is for Owl, hooting at moon. P is for Penguin, waddling in tune. Q is for Quail, running so fast. R is for Rabbit, hopping at last. S is for Snake, sliding along. T is for Tiger, brave and so strong. U is for Unicorn, magical and bright. V is for Vulture, soaring in flight. W is for Whale, swimming so deep. X is for X-ray fish, secrets to keep. Y is for Yak, with shaggy long hair. Z is for Zebra, stripes everywhere! Now you know your A to Z. Animals are friends, you and me. Sing it again, sing it with glee. Learning letters is easy as can be!
+
+---
+Visual Cues (for video editor):
+-------------------------------
+[0:00-0:03] Title card: "Alphabet Adventure!"
+[0:03-0:06] A - Alligator snapping animation
+[0:06-0:09] B - Bear climbing tree
+[0:09-0:12] C - Cat sleeping in ball
+[0:12-0:15] D - Dog barking at moon
+[0:15-0:18] E - Elephant spraying water
+[0:18-0:21] F - Fox hiding in bushes
+[0:21-0:24] G - Giraffe eating leaves from tall tree
+[0:24-0:27] H - Hippo splashing in water
+[0:27-0:30] I - Iguana on rock in sun
+[0:30-0:33] J - Jaguar prowling
+[0:33-0:36] K - Kangaroo hopping with joey
+[0:36-0:39] L - Lion roaring proudly
+[0:39-0:42] M - Monkey swinging vine to vine
+[0:42-0:45] N - Nightingale on branch singing
+[0:45-0:48] O - Owl turning head, big eyes
+[0:48-0:51] P - Penguin waddling line
+[0:51-0:54] Q - Quail running fast
+[0:54-0:57] R - Rabbit hopping
+[0:57-1:00] S - Snake slithering
+[1:00-1:03] T - Tiger prowling
+[1:03-1:06] U - Unicorn sparkles
+[1:06-1:09] V - Vulture soaring high
+[1:09-1:12] W - Whale breaching
+[1:12-1:15] X - X-ray fish (see-through)
+[1:15-1:18] Y - Yak in mountains
+[1:18-1:21] Z - Zebra herd running
+[1:21-1:27] Final chorus: All animals together dancing
+[1:27-1:30] End card: "Subscribe for more!"
+
+---
+Upload Metadata:
+----------------
+YouTube Title: Alphabet Adventure! A-Z Animals Song for Kids 🦁🐘🐒
+YouTube Shorts Title: Learn ABCs with Animals! 🎵 #shorts #kids #alphabet
+Instagram Reel Caption: A to Z animal adventure! 🦓 Which animal is your favorite? Comment below! 👇 #kidslearning #alphabet #animals #educational #toddleractivities
+Facebook Caption: 🎵 Sing along the ABCs with 26 amazing animals! Perfect for preschoolers learning their letters. 🦁🐘🐒
+
+Tags: alphabet song, kids learning, animals for kids, preschool education, ABC, toddler songs, educational videos, phonics
+Hashtags: #alphabet #animals #kidslearning #preschool #toddler #educational #abcsong #phonics

@@ -1,0 +1,61 @@
+TOPIC 2: Counting 1–10 (with Actions)
+=====================================
+
+Rhyme Script:
+-------------
+One, one, clap your hands!
+Two, two, touch your shoes!
+Three, three, touch your knee!
+Four, four, touch the floor!
+Five, five, give a high-five!
+Six, six, do some kicks!
+Seven, seven, point to heaven!
+Eight, eight, skate like great!
+Nine, nine, draw a line!
+Ten, ten, do it again!
+
+One, two, three, four, five
+Six, seven, eight, nine, ten
+Count with me, count with you
+Numbers are fun to do!
+
+Let's count backwards, don't be slow
+Ten, nine, eight, seven, six
+Five, four, three, two, one
+Blast off! 🚀 We're done!
+
+---
+TTS-Ready Text:
+---------------
+One, one, clap your hands! Two, two, touch your shoes! Three, three, touch your knee! Four, four, touch the floor! Five, five, give a high-five! Six, six, do some kicks! Seven, seven, point to heaven! Eight, eight, skate like great! Nine, nine, draw a line! Ten, ten, do it again! One, two, three, four, five. Six, seven, eight, nine, ten. Count with me, count with you. Numbers are fun to do! Let's count backwards, don't be slow. Ten, nine, eight, seven, six. Five, four, three, two, one. Blast off! We're done!
+
+---
+Visual Cues:
+------------
+[0:00-0:03] Title: "Counting 1 to 10 - Action Style!"
+[0:03-0:06] "1" - Animated hands clapping
+[0:06-0:09] "2" - Feet tapping shoes
+[0:09-0:12] "3" - Hand touching knee
+[0:12-0:15] "4" - Hand touching floor
+[0:15-0:18] "5" - Two hands high-five
+[0:18-0:21] "6" - Leg kicking forward
+[0:21-0:24] "7" - Finger pointing up
+[0:24-0:27] "8" - Pretend ice skating motion
+[0:27-0:30] "9" - Finger drawing line in air
+[0:30-0:33] "10" - Arms wide, spin around
+[0:33-0:40] Numbers 1-5 appear on screen, character counts
+[0:40-0:47] Numbers 6-10 appear, character counts
+[0:47-0:55] Countdown 10-1 with rocket animation
+[0:55-1:00] Rocket launches, stars, "Great job!"
+[1:00-1:05] End card with subscribe
+
+---
+Upload Metadata:
+----------------
+YouTube Title: Counting 1 to 10 with Actions! 👏🦶🤸 Kids Exercise Song
+YouTube Shorts Title: Count & Move! 1-10 Action Song 🎵 #shorts #counting #kids
+Instagram Reel Caption: Get moving while counting! 🏃‍♂️💨 1-10 with fun actions. Save for your next brain break! 💾 #countingforkids #preschool #movement #braingym
+Facebook Caption: 🎵 Count 1 to 10 AND get the wiggles out! Perfect action song for circle time or brain breaks. 👏🦶
+
+Tags: counting song, numbers for kids, action songs, brain breaks, preschool math, movement songs, counting 1-10, kindergarten
+Hashtags: #counting #numbers #preschool #kindergarten #actionsong #braingym #movement #mathforkids

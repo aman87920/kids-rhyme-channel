@@ -1,0 +1,100 @@
+# GitHub Actions Workflow for Kids Rhyme Channel
+# Save as: .github/workflows/generate-videos.yml
+
+name: Generate Kids Rhyme Videos
+
+on:
+  workflow_dispatch:  # Manual trigger
+    inputs:
+      topics:
+        description: 'Comma-separated topic numbers (1,2,7,8)'
+        required: false
+        default: '1,2,7,8'
+      upload_to_youtube:
+        description: 'Upload to YouTube after generation'
+        required: false
+        default: false
+
+  schedule:
+    - cron: '0 10 * * 0'  # Weekly on Sunday 10 AM UTC
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-venv ffmpeg libsm6 libxext6 fonts-dejavu-core
+
+      - name: Create virtual environment
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install --upgrade pip
+
+      - name: Install Python dependencies
+        run: |
+          source venv/bin/activate
+          pip install moviepy pillow numpy edge-tts
+
+      - name: Generate TTS Audio
+        run: |
+          source venv/bin/activate
+          for topic in ${{ github.event.inputs.topics || '1,2,7,8' }}; do
+            echo "Generating TTS for topic $topic..."
+            python generate/tts_generate.py --topic $topic --provider edge
+          done
+
+      - name: Generate Videos
+        run: |
+          source venv/bin/activate
+          for topic in ${{ github.event.inputs.topics || '1,2,7,8' }}; do
+            echo "Generating video for topic $topic..."
+            audio_file="assets/audio/topic_$(printf "%02d" $topic)_*.mp3"
+            python generate/video_template.py --topic $topic --audio $audio_file
+          done
+
+      - name: List generated files
+        run: |
+          ls -la output/
+          ls -la assets/audio/
+
+      - name: Upload video artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-videos
+          path: |
+            output/*.mp4
+            assets/audio/*.mp3
+          retention-days: 7
+
+      - name: Upload to YouTube (optional)
+        if: ${{ github.event.inputs.upload_to_youtube == 'true' && secrets.YOUTUBE_CLIENT_SECRET != '' }}
+        run: |
+          source venv/bin/activate
+          pip install google-api-python-client google-auth-oauthlib google-auth-httplib2
+          python upload/youtube_upload.py \
+            --client-secret "${{ secrets.YOUTUBE_CLIENT_SECRET }}" \
+            --topic 1 \
+            --title "Alphabet Adventure! A-Z Animals Song for Kids 🦁🐘🐒" \
+            --description "Learn the ABCs with 26 amazing animals! 🎵"
+        env:
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
