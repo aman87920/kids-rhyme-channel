@@ -58,7 +58,9 @@ jobs:
       - name: Generate TTS Audio
         run: |
           source venv/bin/activate
-          for topic in ${{ github.event.inputs.topics || '1,2,7,8' }}; do
+          TOPICS="${{ github.event.inputs.topics || '1,2,7,8' }}"
+          IFS=',' read -ra TOPIC_ARRAY <<< "$TOPICS"
+          for topic in "${TOPIC_ARRAY[@]}"; do
             echo "Generating TTS for topic $topic..."
             python generate/tts_generate.py --topic $topic --provider edge
           done
@@ -66,7 +68,9 @@ jobs:
       - name: Generate Videos
         run: |
           source venv/bin/activate
-          for topic in ${{ github.event.inputs.topics || '1,2,7,8' }}; do
+          TOPICS="${{ github.event.inputs.topics || '1,2,7,8' }}"
+          IFS=',' read -ra TOPIC_ARRAY <<< "$TOPICS"
+          for topic in "${TOPIC_ARRAY[@]}"; do
             echo "Generating video for topic $topic..."
             audio_file="assets/audio/topic_$(printf "%02d" $topic)_*.mp3"
             python generate/video_template.py --topic $topic --audio $audio_file
