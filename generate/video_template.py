@@ -167,6 +167,7 @@ def create_text_clip(text, duration, fontsize=80, color=TEXT_COLOR, position=("c
         text=text,
         font_size=fontsize,
         color=color,
+        font="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
         stroke_color="white",
         stroke_width=3,
         method="label",
