@@ -87,14 +87,18 @@ jobs:
           retention-days: 7
 
       - name: Upload to YouTube (optional)
-        if: ${{ github.event.inputs.upload_to_youtube == 'true' && secrets.YOUTUBE_CLIENT_SECRET != '' }}
+        if: github.event.inputs.upload_to_youtube == 'true'
+        env:
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
         run: |
+          if [ -z "$YOUTUBE_CLIENT_SECRET" ]; then
+            echo "YOUTUBE_CLIENT_SECRET not set, skipping upload"
+            exit 0
+          fi
           source venv/bin/activate
           pip install google-api-python-client google-auth-oauthlib google-auth-httplib2
           python upload/youtube_upload.py \
-            --client-secret "${{ secrets.YOUTUBE_CLIENT_SECRET }}" \
+            --client-secret "$YOUTUBE_CLIENT_SECRET" \
             --topic 1 \
             --title "Alphabet Adventure! A-Z Animals Song for Kids 🦁🐘🐒" \
             --description "Learn the ABCs with 26 amazing animals! 🎵"
-        env:
-          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
