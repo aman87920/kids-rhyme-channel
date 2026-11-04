@@ -21,6 +21,7 @@ from moviepy import (
     VideoFileClip, ImageClip, TextClip, CompositeVideoClip,
     ColorClip, AudioFileClip, concatenate_videoclips
 )
+from moviepy.audio.AudioClip import concatenate_audioclips
 from moviepy.video.fx import Resize
 import numpy as np
 
@@ -281,7 +282,7 @@ def build_video(topic_num, add_audio=False, audio_path=None):
         if audio.duration < final.duration:
             # Repeat audio to match video duration
             repeats = int(final.duration / audio.duration) + 1
-            audio = concatenate_videoclips([audio] * repeats).subclipped(0, final.duration)
+            audio = concatenate_audioclips([audio] * repeats).subclipped(0, final.duration)
         else:
             audio = audio.subclipped(0, final.duration)
         final = final.with_audio(audio)
