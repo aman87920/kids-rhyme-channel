@@ -1,6 +1,6 @@
 moviepy==2.1.2
 pillow==10.0.0
-numpy==1.24.0
+numpy>=1.24,<2
 edge-tts==6.1.9
 google-api-python-client==2.108.0
 google-auth-oauthlib==1.1.0
