@@ -55,17 +55,7 @@ jobs:
           source venv/bin/activate
           pip install -r requirements.txt
 
-      - name: Generate TTS Audio
-        run: |
-          source venv/bin/activate
-          TOPICS="${{ github.event.inputs.topics || '1,2,7,8' }}"
-          IFS=',' read -ra TOPIC_ARRAY <<< "$TOPICS"
-          for topic in "${TOPIC_ARRAY[@]}"; do
-            echo "Generating TTS for topic $topic..."
-            python generate/tts_generate.py --topic $topic --provider edge
-          done
-
-      - name: Generate Videos
+      - name: Generate Videos (using pre-generated audio)
         run: |
           source venv/bin/activate
           TOPICS="${{ github.event.inputs.topics || '1,2,7,8' }}"
