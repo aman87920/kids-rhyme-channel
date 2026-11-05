@@ -263,7 +263,9 @@ def build_video(topic_num, add_audio=False, audio_path=None):
                 font="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
                 stroke_color="white",
                 stroke_width=5,
-                method="caption"
+                method="caption",
+                size=(WIDTH - 100, None),
+                text_align="center"
             ).with_duration(duration).with_position(("center", HEIGHT // 4))
             clips.append(CompositeVideoClip([bg, text_clip, num_clip]))
         else:
